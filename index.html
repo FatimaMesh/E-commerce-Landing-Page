@@ -1,0 +1,242 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="e-commerce website helps to buy best devices in fast and good price "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="e-commerce, technology, tv, devices, machines, computer, mobile"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>CSS Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <img src="image/e-commerce-logo.png" alt="Logo image" id="header_logo" />
+      <nav role="navigation" aria-label="navigation">
+        <ul role="menu">
+          <li role="menuitem">Home</li>
+          <li role="menuitem">About us</li>
+          <li role="menuitem">Products</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section" tabindex="0">
+      <div id="container">
+        <h1 role="heading">Every product is special, Just for you!</h1>
+        <p class="sub_heading">
+          Tec e-commerce contains all the tools you need related to technology,
+          TV, Computers, mobiles, and home machines. All in one place.
+        </p>
+        <button aria-label="Shop now" id="shop_Btn" tabindex="0">
+          Shop Now !
+        </button>
+      </div>
+    </section>
+    <!-- Products cards -->
+    <section id="products">
+      <h1>Most Request Products</h1>
+      <div class="products_card">
+        <article>
+          <img
+            src="image/products/macbook14.png"
+            alt="Product image"
+            id="products_image"
+          />
+          <h2 class="title">MacBook Pro 14</h2>
+          <p class="sub_heading">
+            M3 Pro or M3 Max chip -Support for up to two or four external
+            displays
+          </p>
+          <p>Price : 8037 SR</p>
+          <button aria-label="Add" class="add_btn">Add item</button>
+        </article>
+        <article>
+          <img
+            src="image/products/microwave.png"
+            alt="Product image"
+            id="products_image"
+          />
+          <h2 class="title">Microwave Oven</h2>
+          <p class="sub_heading">
+            20L, 700W, Mechanical Control without Grill. White Out-Case and
+            Painted White Cavity.
+          </p>
+          <p>Price : 296 SR</p>
+          <button aria-label="Add" class="add_btn">Add item</button>
+        </article>
+        <article>
+          <img
+            src="image/products/headphone.png"
+            alt="Product image"
+            id="products_image"
+          />
+          <h2 class="title">Headphones Bluetooth</h2>
+          <p class="sub_heading">
+            Energy Headphones Bluetooth Style 3, USB Type-C charging cable,
+            Audio cable, Quick guide
+          </p>
+          <p>Price : 500 SR</p>
+          <button aria-label="Add" class="add_btn">Add item</button>
+        </article>
+        <article>
+          <img
+            src="image/products/iphone15.png"
+            alt="Product image"
+            id="products_image"
+          />
+          <h2 class="title">iPhone 15 128GB Pink</h2>
+          <p class="sub_heading">
+            Dynamic Island, a 48MP Main camera, and USB-C—all in a durable
+            color-infused glass and aluminum design.
+          </p>
+          <p>Price : 3769 SR</p>
+          <button aria-label="Add" class="add_btn">Add item</button>
+        </article>
+        <article>
+          <img
+            src="image/products/samsungTV.png"
+            alt="Product image"
+            id="products_image"
+          />
+          <h2 class="title">Samsung 32-Inch TV</h2>
+          <p class="sub_heading">
+            1920 x 1080 Resolution, Wide Color Enhancer Plus, Digital Noise,
+            Filter available, 100 Clear Motion Rate, Dolby Digital Plus / Dolby
+            Pulse.
+          </p>
+          <p>Price : 600 SR</p>
+          <button aria-label="Add" class="add_btn">Add item</button>
+        </article>
+      </div>
+    </section>
+    <main aria-label="container">
+      <!-- Customers reviews  -->
+      <section id="reviews-section">
+        <h2 class="title">Customers Reviews</h2>
+        <div id="review-card">
+          <article>
+            <img src="image/user.jpeg" alt="Client Image Profile" width="10%" />
+            <p>Customers' comments about products</p>
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </article>
+          <article>
+            <img src="image/user.jpeg" alt="Client Image Profile" width="10%" />
+            <p>Customers' comments about products</p>
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span>
+          </article>
+          <article>
+            <img src="image/user.jpeg" alt="Client Image Profile" width="10%" />
+            <p>Customers' comments about products</p>
+            <span>&#9733;</span><span>&#9733;</span>
+          </article>
+          <article>
+            <img src="image/user.jpeg" alt="Client Image Profile" width="10%" />
+            <p>Customers' comments about products</p>
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span>
+          </article>
+        </div>
+      </section>
+      <!-- Subscription section -->
+      <section class="Subscription" tabindex="0">
+        <img src="image/subscribe.png" alt="Subscription icon" width="30%" />
+        <form id="subscribe_Form" aria-label="Subscription form">
+          <h3>Subscribe to our newsletter!</h3>
+          <p>
+            We will share with you the best offers and interesting things you
+            may like
+          </p>
+          <table>
+            <tr>
+              <th><label for="name">Name:</label></th>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="yourName"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="email">Email:</label></th>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="your.email@example.com"
+                  aria-invalid="true"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+          <button id="subscribe_Btn" type="submit" aria-label="Subscribe">
+            Subscribe
+          </button>
+        </form>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <div id="main_pages">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#Home" aria-label="Home page">Home</a></li>
+          <li><a href="#Products" aria-label="Products page">Products</a></li>
+          <li><a href="#About" aria-label="About page">About us</a></li>
+        </ul>
+      </div>
+      <div id="contact_us">
+        <h4>Contact us</h4>
+        <ul>
+          <li>
+            <a href="#phone" aria-label="phone contact"
+              ><em class="fa fa-phone"></em> +98753789</a
+            >
+          </li>
+          <li>
+            <a href="#email" aria-label="email contact">
+              <em class="fa fa-envelope"></em> tec-ecommerce@yhoo.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="social_media">
+        <h4>Follow Us</h4>
+        <ul>
+          <li>
+            <a href="#" aria-label="facebook account"
+              ><em class="fa fa-facebook-f"></em
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="instagram account"
+              ><em class="fa fa-instagram"></em
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="linkedin account"
+              ><em class="fa fa-linkedin"></em
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+/* General style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+button {
+  cursor: pointer;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+header,
+footer,
+.hero-section {
+  box-sizing: border-box;
+}
+/* header style */
+header {
+  background-color: lightgrey;
+  box-shadow: 10px 5px 10px #000;
+  position: sticky;
+  top: 0px;
+}
+header img {
+  margin-top: 1rem;
+  width: 8rem;
+}
+ul[role="menu"] {
+  padding: 0.5rem;
+  display: flex;
+  list-style: none;
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+ul[role="menu"] li {
+  margin: 0 auto;
+  transition: 0.5s;
+}
+ul[role="menu"] li:hover {
+  color: lightgray;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* hero section style */
+.hero-section {
+  background: url(../../image/heroSectionBackground.jpg) no-repeat center
+    center/cover;
+  color: white;
+}
+.hero-section #container {
+  box-sizing: border-box;
+  width: 60%;
+  align-items: left;
+  padding: 6rem;
+  text-align: left;
+}
+.hero-section h1::first-letter {
+  color: #a77211;
+  font-size: 25px;
+}
+.hero-section button {
+  padding: 0.8rem;
+  font-size: 17px;
+  font-weight: bold;
+  background: rgba(40, 32, 9, 0.299);
+  color: white;
+  margin-top: 3%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(254, 254, 254, 0.635),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+.hero-section button:hover {
+  background: rgba(255, 255, 255, 0.611);
+  color: #000;
+}
+.hero-section p {
+  margin-top: 1%;
+  width: 80%;
+  text-align: justify;
+  font-size: 14px;
+  color: lightgray;
+}
+
+/* Product card style */
+#products {
+  grid-area: product;
+}
+#products h1 {
+  margin-top: 2rem;
+}
+.products_card {
+  width: 80%;
+  border: 1px solid rgba(128, 128, 128, 0.116);
+  margin: 1% auto;
+  padding: 1.5rem;
+  display: flex;
+  overflow: scroll;
+}
+.products_card article {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-width: 14rem;
+  height: 20rem;
+  margin: 1%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 2px #0000006d;
+}
+
+.products_card img {
+  max-width: 90%;
+  height: 5rem;
+  align-items: center;
+}
+.products_card button,
+#subscribe_Btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #0000006d;
+  border: none;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  font-size: 1rem;
+}
+.products_card button:hover {
+  background: whitesmoke;
+  color: black;
+}
+.products_card .title {
+  font-size: 20px;
+}
+.products_card .subheading {
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* Subscription and Reviews container */
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "reviews subscribe";
+  justify-content: center;
+  gap: 4%;
+}
+
+/* Reviews section */
+#reviews-section {
+  grid-area: reviews;
+  margin: auto;
+}
+#review-card {
+  width: 310px;
+  display: flex;
+  border: 1px solid rgba(128, 128, 128, 0.116);
+  flex-direction: column;
+  height: 30vh;
+  padding: 1%;
+  overflow: scroll;
+}
+#reviews-section .title {
+  animation-name: header_animate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes header_animate {
+  from {
+    color: #000;
+  }
+  to {
+    color: #a77211;
+  }
+}
+#reviews-section article {
+  width: 300px;
+  box-shadow: 1px 1px 2px #0000006d;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+}
+
+/* Subscription style */
+.Subscription {
+  grid-area: subscribe;
+  width: 20rem;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 5%;
+  text-align: center;
+  margin: 5% auto;
+  box-shadow: 1px 1px 2px #0000006d;
+}
+.Subscription table {
+  margin: 0 auto;
+}
+.Subscription tr th {
+  padding: 0.5rem;
+}
+.Subscription input {
+  border: none;
+  border-bottom: 1px solid #4e474752;
+}
+.Subscription input:focus {
+  outline: none;
+  border-bottom: 3px solid rgba(99, 148, 161, 0.841);
+}
+#subscribe_Btn:hover {
+  background: rgba(99, 148, 161, 0.841);
+  color: black;
+}
+#subscribe_Btn {
+  margin-top: 4%;
+}
+/* footer style */
+footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background: #d3d3d3;
+  padding: 1.2rem;
+  color: rgb(17, 68, 134);
+  box-shadow: 20px 10px 15px #000;
+  margin-top: 1rem;
+}
+
+footer h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+#social_media ul {
+  font-size: 1.5rem;
+}
+#social_media a:hover {
+  font-size: 1.7rem;
+}
+/* small screen */
+
+@media screen and (max-width: 600px) {
+  .header ul[role="menu"] {
+    display: block;
+  }
+  header img {
+    margin-top: 0.5rem;
+    width: 5.5rem;
+  }
+  .hero-section {
+    font-size: 0.7rem;
+  }
+  .hero-section #container {
+    padding: 3rem;
+  }
+  .hero-section button {
+    padding: 0.4rem;
+    font-size: 13px;
+  }
+  main {
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "reviews"
+      "subscribe";
+    justify-content: center;
+  }
+  footer {
+    grid-template-columns: auto;
+    gap: 4%;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 500px) {
+  .hero-section {
+    background: none;
+    font-size: 0.8rem;
+  }
+  .hero-section #container {
+    width: 100%;
+    padding: 1rem;
+    background-color: #000000b3;
+  }
+  .hero-section #container {
+    padding: 3rem;
+  }
+  .hero-section button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  main {
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "reviews"
+      "subscribe";
+    justify-content: center;
+    gap: 2%;
+  }
+  footer {
+    grid-template-columns: auto;
+    gap: 4%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero-section {
+    background: none;
+  }
+  .hero-section #container {
+    width: 100%;
+    background-color: #000000b3;
+  }
+  .Subscription {
+    width: 15rem;
+    padding: 1rem;
+    margin-bottom: 7%;
+  }
+  #review-card {
+    width: 250px;
+    height: 30vh;
+  }
+  #review-card article {
+    width: 230px;
+  }
+  .products_card {
+    width: 60%;
+    margin-bottom: 8%;
+  }
+  #main_pages ul,
+  #contact_us ul {
+    flex-direction: column;
+  }
+}
